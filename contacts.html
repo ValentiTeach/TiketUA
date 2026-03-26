@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Контакти · ТікетЮА</title>
+  <meta name="description" content="Зв'яжіться з командою ТікетЮА. Телефон гарячої лінії, email підтримки, онлайн-чат та адреса офісу." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <a href="index.html" class="logo">
+        <div class="logo__dot"></div>
+        Тікет<span>ЮА</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html" class="nav__link">Головна</a>
+        <a href="index.html#events" class="nav__link">Концерти</a>
+        <a href="index.html#events" class="nav__link">Театр</a>
+        <a href="index.html#events" class="nav__link">Спорт</a>
+        <a href="index.html#events" class="nav__link">Виставки</a>
+        <a href="about.html" class="nav__link">Про нас</a>
+      </nav>
+      <div class="header__search">
+        <input type="text" placeholder="Пошук подій, артистів…" />
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
+        </svg>
+      </div>
+      <div class="header__actions">
+        <a href="contacts.html" class="btn btn--ghost" style="color:var(--gold); border-color:var(--gold-dim);">Підтримка</a>
+        <a href="#" class="btn btn--gold">Увійти</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ===== PAGE HERO ===== -->
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero__label">Зв'язатись з нами</div>
+    <h1 class="page-hero__title">Контакти</h1>
+    <p class="page-hero__sub">Маєте питання або потрібна допомога? Наша команда підтримки завжди готова допомогти вам.</p>
+  </div>
+</section>
+
+<!-- ===== CONTACTS LAYOUT ===== -->
+<section class="section">
+  <div class="container">
+    <div class="contacts-layout">
+
+      <!-- left: info + map -->
+      <div>
+        <h2 class="section-title" style="margin-bottom:28px;">Як нас <span>знайти</span></h2>
+        <div class="contacts-info">
+
+          <div class="contact-item">
+            <div class="contact-item__icon">📞</div>
+            <div>
+              <div class="contact-item__title">Гаряча лінія</div>
+              <div class="contact-item__val">
+                <a href="tel:+380800123456">0 800 123 456</a>
+              </div>
+              <p style="font-size:13px; color:var(--muted); margin-top:4px;">Безкоштовно · Пн–Нд 9:00–21:00</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item__icon">✉</div>
+            <div>
+              <div class="contact-item__title">Електронна пошта</div>
+              <div class="contact-item__val">
+                <a href="mailto:support@ticketua.com">support@ticketua.com</a>
+              </div>
+              <p style="font-size:13px; color:var(--muted); margin-top:4px;">Відповідаємо протягом 2 годин</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item__icon">💬</div>
+            <div>
+              <div class="contact-item__title">Онлайн-чат</div>
+              <div class="contact-item__val">Відкрити чат на сайті</div>
+              <p style="font-size:13px; color:var(--muted); margin-top:4px;">Час очікування: до 5 хвилин</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item__icon">✈</div>
+            <div>
+              <div class="contact-item__title">Telegram</div>
+              <div class="contact-item__val">
+                <a href="#">@ticketua_support</a>
+              </div>
+              <p style="font-size:13px; color:var(--muted); margin-top:4px;">Бот та живі оператори</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item__icon">🏢</div>
+            <div>
+              <div class="contact-item__title">Офіс</div>
+              <div class="contact-item__val">вул. Хрещатик 22, Київ, 01001</div>
+              <p style="font-size:13px; color:var(--muted); margin-top:4px;">Пн–Пт 10:00–18:00</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- map placeholder -->
+        <div class="map-placeholder">
+          <span>🗺</span>
+          <span>Київ, вул. Хрещатик 22</span>
+          <a href="https://maps.google.com" target="_blank" class="btn btn--ghost" style="font-size:13px; padding:8px 18px;">
+            Відкрити в Google Maps
+          </a>
+        </div>
+
+        <!-- social block -->
+        <div style="margin-top:40px;">
+          <h3 style="font-size:18px; font-weight:700; margin-bottom:20px;">Ми в соцмережах</h3>
+          <div style="display:flex; gap:12px; flex-wrap:wrap;">
+            <a href="#" class="btn btn--ghost" style="gap:8px;">
+              📷 Instagram
+            </a>
+            <a href="#" class="btn btn--ghost" style="gap:8px;">
+              👥 Facebook
+            </a>
+            <a href="#" class="btn btn--ghost" style="gap:8px;">
+              ✈ Telegram
+            </a>
+            <a href="#" class="btn btn--ghost" style="gap:8px;">
+              ▶ YouTube
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- right: contact form -->
+      <div class="contact-form" id="form">
+        <div class="contact-form__title">Написати нам</div>
+
+        <div class="form-group">
+          <label class="form-label">Ваше ім'я *</label>
+          <input type="text" class="form-input" placeholder="Ім'я та прізвище" required />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Email *</label>
+          <input type="email" class="form-input" placeholder="email@example.com" required />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Телефон</label>
+          <input type="tel" class="form-input" placeholder="+380 __ ___ ____" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Тема звернення *</label>
+          <select class="form-input" style="cursor:pointer;">
+            <option value="">Оберіть тему</option>
+            <option>Питання щодо замовлення</option>
+            <option>Повернення квитка</option>
+            <option>Технічна проблема</option>
+            <option>Партнерство / організатори</option>
+            <option>Пропозиція або скарга</option>
+            <option>Інше</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Повідомлення *</label>
+          <textarea class="form-input" placeholder="Опишіть ваше питання або проблему…" rows="5" required></textarea>
+        </div>
+
+        <div class="form-group" style="display:flex; align-items:flex-start; gap:10px;">
+          <input type="checkbox" id="agree" style="margin-top:3px; accent-color:var(--gold); width:16px; height:16px; flex-shrink:0; cursor:pointer;" />
+          <label for="agree" style="font-size:13px; color:var(--muted); line-height:1.6; cursor:pointer;">
+            Я погоджуюсь з <a href="#" style="color:var(--gold);">умовами використання</a> та
+            <a href="#" style="color:var(--gold);">політикою конфіденційності</a>.
+          </label>
+        </div>
+
+        <button type="submit" class="btn btn--gold btn--full btn--lg">
+          Надіслати повідомлення
+        </button>
+
+        <p style="text-align:center; font-size:13px; color:var(--muted); margin-top:14px;">
+          Відповімо протягом 2 робочих годин
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOR ORGANIZERS ===== -->
+<section class="section--sm" style="background:var(--bg2);">
+  <div class="container">
+    <div class="promo-banner">
+      <div>
+        <div class="promo-banner__eyebrow">🤝 Для організаторів</div>
+        <h2 class="promo-banner__title">Продавайте квитки через ТікетЮА</h2>
+        <p class="promo-banner__sub">
+          Розмістіть свою подію на платформі та отримайте доступ до аудиторії
+          понад 1.2 мільйони активних покупців.
+        </p>
+      </div>
+      <div class="promo-banner__cta">
+        <a href="#form" class="btn btn--gold btn--lg">Залишити заявку</a>
+        <a href="about.html" class="btn btn--ghost btn--lg">Дізнатись більше</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <div class="footer__logo-wrap">
+          <a href="index.html" class="logo"><div class="logo__dot"></div>Тікет<span>ЮА</span></a>
+        </div>
+        <p class="footer__desc">Офіційний онлайн-сервіс продажу квитків на події по всій Україні.</p>
+        <div class="footer__socials">
+          <a href="#" class="footer__social">✈</a>
+          <a href="#" class="footer__social">📷</a>
+          <a href="#" class="footer__social">👥</a>
+          <a href="#" class="footer__social">▶</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">Каталог</div>
+        <ul class="footer__links">
+          <li><a href="#" class="footer__link">🎵 Концерти</a></li>
+          <li><a href="#" class="footer__link">🎭 Театр</a></li>
+          <li><a href="#" class="footer__link">⚽ Спорт</a></li>
+          <li><a href="#" class="footer__link">🎨 Виставки</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer__col-title">Компанія</div>
+        <ul class="footer__links">
+          <li><a href="about.html" class="footer__link">Про нас</a></li>
+          <li><a href="faq.html" class="footer__link">FAQ</a></li>
+          <li><a href="contacts.html" class="footer__link">Контакти</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer__col-title">Підтримка</div>
+        <ul class="footer__links">
+          <li><a href="tel:+380800123456" class="footer__link">📞 0 800 123 456</a></li>
+          <li><a href="mailto:support@ticketua.com" class="footer__link">✉ support@ticketua.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span class="footer__copy">© 2025 ТікетЮА. Усі права захищені.</span>
+      <div class="footer__payments">
+        <span class="pay-badge">VISA</span>
+        <span class="pay-badge">MC</span>
+        <span class="pay-badge">APPLE PAY</span>
+        <span class="pay-badge">G PAY</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
