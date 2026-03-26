@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ТікетЮА — Квитки на концерти, вистави та події</title>
+  <meta name="description" content="Купуйте квитки на найкращі події України — концерти, театр, спорт, виставки. Безпечна оплата, електронний квиток на пошту." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <a href="index.html" class="logo">
+        <div class="logo__dot"></div>
+        Тікет<span>ЮА</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html" class="nav__link active">Головна</a>
+        <a href="#events" class="nav__link">Концерти</a>
+        <a href="#events" class="nav__link">Театр</a>
+        <a href="#events" class="nav__link">Спорт</a>
+        <a href="#events" class="nav__link">Виставки</a>
+        <a href="about.html" class="nav__link">Про нас</a>
+      </nav>
+      <div class="header__search">
+        <input type="text" placeholder="Пошук подій, артистів…" />
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
+        </svg>
+      </div>
+      <div class="header__actions">
+        <a href="contacts.html" class="btn btn--ghost">Підтримка</a>
+        <a href="#order" class="btn btn--gold">Увійти</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="container">
+    <div class="hero__grid">
+      <div class="hero__content">
+        <div class="hero__eyebrow">
+          <div class="hero__eyebrow-line"></div>
+          <span>Офіційний продаж квитків</span>
+        </div>
+        <h1 class="hero__title">
+          Знайди<br/>своє<br/><em>шоу</em>
+        </h1>
+        <p class="hero__sub">
+          Понад 2 500 подій щомісяця по всій Україні.
+          Купуй квитки онлайн — безпечно, швидко, без черг.
+        </p>
+        <div class="hero__cta">
+          <a href="#events" class="btn btn--gold btn--lg">Переглянути події</a>
+          <a href="about.html" class="btn btn--ghost btn--lg">Як це працює</a>
+        </div>
+        <div class="hero__stats">
+          <div>
+            <div class="hero__stat-num">2500+</div>
+            <div class="hero__stat-label">Подій щомісяця</div>
+          </div>
+          <div>
+            <div class="hero__stat-num">180+</div>
+            <div class="hero__stat-label">Міст України</div>
+          </div>
+          <div>
+            <div class="hero__stat-num">1.2М</div>
+            <div class="hero__stat-label">Задоволених глядачів</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Featured card -->
+      <div class="hero__card">
+        <div class="hero__card-img">🎸</div>
+        <div class="hero__card-body">
+          <div class="hero__card-tag"><span class="tag">Концерт</span></div>
+          <div class="hero__card-title">Океан Ельзи — Тур 2025</div>
+          <div class="hero__card-meta">
+            <span class="badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              18 жовтня 2025
+            </span>
+            <span class="badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Київ, Палац Спорту
+            </span>
+          </div>
+          <div class="hero__card-price">
+            <div>
+              <div class="price-from">від</div>
+              <div class="price-val">850 ₴</div>
+            </div>
+            <a href="event.html" class="btn btn--gold">Купити</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== SEARCH BAR ===== -->
+<div class="search-bar">
+  <div class="container">
+    <div class="search-bar__inner">
+      <div class="search-bar__field">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
+        </svg>
+        <input type="text" placeholder="Назва події або артист…" />
+      </div>
+      <div class="search-bar__field">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
+        </svg>
+        <select>
+          <option value="">Усі міста</option>
+          <option>Київ</option>
+          <option>Харків</option>
+          <option>Одеса</option>
+          <option>Дніпро</option>
+          <option>Львів</option>
+        </select>
+      </div>
+      <div class="search-bar__field">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
+        </svg>
+        <input type="date" />
+      </div>
+      <div class="search-bar__field">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+        </svg>
+        <select>
+          <option value="">Усі категорії</option>
+          <option>Концерти</option>
+          <option>Театр</option>
+          <option>Спорт</option>
+          <option>Виставки</option>
+          <option>Дитячі</option>
+        </select>
+      </div>
+      <button class="btn btn--gold">Знайти</button>
+    </div>
+  </div>
+</div>
+
+<!-- ===== EVENTS SECTION ===== -->
+<section class="section" id="events">
+  <div class="container">
+    <div class="section-header">
+      <div>
+        <h2 class="section-title">Найближчі <span>події</span></h2>
+        <p class="section-sub">Актуальні квитки на найгарячіші заходи</p>
+      </div>
+      <a href="#" class="link-all">Всі події →</a>
+    </div>
+
+    <!-- category pills -->
+    <div class="categories">
+      <div class="cat-pill active"><span>🎵</span> Концерти</div>
+      <div class="cat-pill"><span>🎭</span> Театр</div>
+      <div class="cat-pill"><span>⚽</span> Спорт</div>
+      <div class="cat-pill"><span>🎨</span> Виставки</div>
+      <div class="cat-pill"><span>🎪</span> Цирк</div>
+      <div class="cat-pill"><span>👶</span> Дитячі</div>
+      <div class="cat-pill"><span>🎤</span> Стендап</div>
+      <div class="cat-pill"><span>🎬</span> Кіно</div>
+    </div>
+
+    <!-- events grid -->
+    <div class="events-grid">
+
+      <!-- card 1 -->
+      <article class="event-card">
+        <div class="event-card__poster">
+          <div class="poster-placeholder" style="background:linear-gradient(135deg,#1a0a2e,#2e1a0a);">🎸</div>
+          <div class="event-card__badges">
+            <span class="tag">Концерт</span>
+          </div>
+          <button class="event-card__wishlist" title="До улюблених">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+            </svg>
+          </button>
+        </div>
+        <div class="event-card__body">
+          <div class="event-card__cat">Концерт · Рок</div>
+          <h3 class="event-card__title">Океан Ельзи — Тур 2025</h3>
+          <div class="event-card__meta">
+            <span class="badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              18 жовтня 2025
+            </span>
+            <span class="badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Київ, Палац Спорту
+            </span>
+          </div>
+          <div class="event-card__footer">
+            <div>
+              <div class="event-card__price-label">від</div>
+              <div class="event-card__price-val">850 ₴</div>
+            </div>
+            <a href="event.html" class="event-card__btn">Квиток</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- card 2 -->
+      <article class="event-card">
+        <div class="event-card__poster">
+          <div class="poster-placeholder" style="background:linear-gradient(135deg,#0a1e2e,#0a2e1a);">⚽</div>
+          <div class="event-card__badges">
+            <span class="tag">Спорт</span>
+            <span class="tag tag--red">Хіт</span>
+          </div>
+          <button class="event-card__wishlist" title="До улюблених">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+            </svg>
+          </button>
+        </div>
+        <div class="event-card__body">
+          <div class="event-card__cat">Спорт · Футбол</div>
+          <h3 class="event-card__title">Динамо Київ — Шахтар</h3>
+          <div class="event-card__meta">
+            <span class="badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              5 листопада 2025
+            </span>
+            <span class="badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Київ, НСК Олімпійський
+            </span>
+          </div>
+          <div class="event-card__footer">
+            <div>
+              <div class="event-card__price-label">від</div>
+              <div class="event-card__price-val">300 ₴</div>
+            </div>
+            <a href="event.html" class="event-card__btn">Квиток</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- card 3 -->
+      <article class="event-card">
+        <div class="event-card__poster">
+          <div class="poster-placeholder" style="background:linear-gradient(135deg,#1e1a0a,#1a0a1e);">🎭</div>
+          <div class="event-card__badges">
+            <span class="tag">Театр</span>
+          </div>
+          <button class="event-card__wishlist" title="До улюблених">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+            </svg>
+          </button>
+        </div>
+        <div class="event-card__body">
+          <div class="event-card__cat">Театр · Вистава</div>
+          <h3 class="event-card__title">Лісова Пісня — Театр на Лівому</h3>
+          <div class="event-card__meta">
+            <span class="badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              2 листопада 2025
+            </span>
+            <span class="badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Київ, Театральна 25
+            </span>
+          </div>
+          <div class="event-card__footer">
+            <div>
+              <div class="event-card__price-label">від</div>
+              <div class="event-card__price-val">220 ₴</div>
+            </div>
+            <a href="event.html" class="event-card__btn">Квиток</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- card 4 -->
+      <article class="event-card">
+        <div class="event-card__poster">
+          <div class="poster-placeholder" style="background:linear-gradient(135deg,#0a2e2e,#2e0a0a);">🎤</div>
+          <div class="event-card__badges">
+            <span class="tag">Стендап</span>
+          </div>
+          <button class="event-card__wishlist" title="До улюблених">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+            </svg>
+          </button>
+        </div>
+        <div class="event-card__body">
+          <div class="event-card__cat">Гумор · Стендап</div>
+          <h3 class="event-card__title">Ніч Стендапу 2025 — Великий Збір</h3>
+          <div class="event-card__meta">
+            <span class="badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              15 листопада 2025
+            </span>
+            <span class="badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Харків, ХК Металіст
+            </span>
+          </div>
+          <div class="event-card__footer">
+            <div>
+              <div class="event-card__price-label">від</div>
+              <div class="event-card__price-val">450 ₴</div>
+            </div>
+            <a href="event.html" class="event-card__btn">Квиток</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- card 5 -->
+      <article class="event-card">
+        <div class="event-card__poster">
+          <div class="poster-placeholder" style="background:linear-gradient(135deg,#1e0a0a,#0a0a1e);">🎻</div>
+          <div class="event-card__badges">
+            <span class="tag">Класика</span>
+          </div>
+          <button class="event-card__wishlist" title="До улюблених">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+            </svg>
+          </button>
+        </div>
+        <div class="event-card__body">
+          <div class="event-card__cat">Музика · Симфонія</div>
+          <h3 class="event-card__title">Національний Симфонічний Оркестр</h3>
+          <div class="event-card__meta">
+            <span class="badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              22 жовтня 2025
+            </span>
+            <span class="badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Київ, Колонний Зал
+            </span>
+          </div>
+          <div class="event-card__footer">
+            <div>
+              <div class="event-card__price-label">від</div>
+              <div class="event-card__price-val">180 ₴</div>
+            </div>
+            <a href="event.html" class="event-card__btn">Квиток</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- card 6 -->
+      <article class="event-card">
+        <div class="event-card__poster">
+          <div class="poster-placeholder" style="background:linear-gradient(135deg,#0a1a0a,#1a1a00);">🎨</div>
+          <div class="event-card__badges">
+            <span class="tag">Виставка</span>
+          </div>
+          <button class="event-card__wishlist" title="До улюблених">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+            </svg>
+          </button>
+        </div>
+        <div class="event-card__body">
+          <div class="event-card__cat">Виставка · Мистецтво</div>
+          <h3 class="event-card__title">Сучасне Мистецтво України — Арт Простір</h3>
+          <div class="event-card__meta">
+            <span class="badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              1–30 листопада 2025
+            </span>
+            <span class="badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Одеса, Музей Сучасного Мист.
+            </span>
+          </div>
+          <div class="event-card__footer">
+            <div>
+              <div class="event-card__price-label">від</div>
+              <div class="event-card__price-val">120 ₴</div>
+            </div>
+            <a href="event.html" class="event-card__btn">Квиток</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROMO BANNER ===== -->
+<section class="section--sm">
+  <div class="container">
+    <div class="promo-banner">
+      <div>
+        <div class="promo-banner__eyebrow">🔥 Гаряча пропозиція</div>
+        <h2 class="promo-banner__title">Підпишись — отримай знижку 15%</h2>
+        <p class="promo-banner__sub">
+          Реєструйся на ТікетЮА та отримуй знижку на перше замовлення,
+          сповіщення про нові події та ексклюзивні пропозиції на пошту.
+        </p>
+      </div>
+      <div class="promo-banner__cta">
+        <a href="#" class="btn btn--gold btn--lg">Зареєструватися</a>
+        <span class="promo-banner__note">Безкоштовно · Без спаму</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CITIES ===== -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <div>
+        <h2 class="section-title">Міста <span>України</span></h2>
+        <p class="section-sub">Вибери своє місто й знайди найкращі події поруч</p>
+      </div>
+      <a href="#" class="link-all">Всі міста →</a>
+    </div>
+    <div class="cities-grid">
+      <a href="#events" class="city-card">
+        <div class="city-card__icon">🏛</div>
+        <div class="city-card__name">Київ</div>
+        <div class="city-card__count">847 подій</div>
+      </a>
+      <a href="#events" class="city-card">
+        <div class="city-card__icon">🌊</div>
+        <div class="city-card__name">Одеса</div>
+        <div class="city-card__count">312 подій</div>
+      </a>
+      <a href="#events" class="city-card">
+        <div class="city-card__icon">🦁</div>
+        <div class="city-card__name">Львів</div>
+        <div class="city-card__count">289 подій</div>
+      </a>
+      <a href="#events" class="city-card">
+        <div class="city-card__icon">🌿</div>
+        <div class="city-card__name">Харків</div>
+        <div class="city-card__count">254 події</div>
+      </a>
+      <a href="#events" class="city-card">
+        <div class="city-card__icon">💎</div>
+        <div class="city-card__name">Дніпро</div>
+        <div class="city-card__count">198 подій</div>
+      </a>
+      <a href="#events" class="city-card">
+        <div class="city-card__icon">🌺</div>
+        <div class="city-card__name">Запоріжжя</div>
+        <div class="city-card__count">143 події</div>
+      </a>
+      <a href="#events" class="city-card">
+        <div class="city-card__icon">🏔</div>
+        <div class="city-card__name">Івано-Франківськ</div>
+        <div class="city-card__count">97 подій</div>
+      </a>
+      <a href="#events" class="city-card">
+        <div class="city-card__icon">🌸</div>
+        <div class="city-card__name">Вінниця</div>
+        <div class="city-card__count">88 подій</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== HOW IT WORKS ===== -->
+<section class="section" style="background:var(--bg2);">
+  <div class="container">
+    <div class="section-header">
+      <div>
+        <h2 class="section-title">Як це <span>працює</span></h2>
+        <p class="section-sub">Купівля квитків за 4 простих кроки</p>
+      </div>
+    </div>
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-num">01</div>
+        <div class="step-title">Оберіть подію</div>
+        <p class="step-desc">Знайдіть потрібний концерт, виставу чи матч через пошук або перегляд каталогу.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">02</div>
+        <div class="step-title">Оберіть місця</div>
+        <p class="step-desc">Виберіть тип квитка, кількість місць та зручний сектор або категорію.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">03</div>
+        <div class="step-title">Оплатіть онлайн</div>
+        <p class="step-desc">Картка Visa/Mastercard, Apple Pay, Google Pay — швидка та безпечна оплата.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">04</div>
+        <div class="step-title">Отримайте квиток</div>
+        <p class="step-desc">PDF-квиток з QR-кодом надходить на вашу електронну пошту одразу після оплати.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <div class="footer__logo-wrap">
+          <a href="index.html" class="logo">
+            <div class="logo__dot"></div>
+            Тікет<span>ЮА</span>
+          </a>
+        </div>
+        <p class="footer__desc">
+          Офіційний онлайн-сервіс продажу квитків на події по всій Україні.
+          Понад 2500 заходів щомісяця — концерти, театр, спорт, виставки.
+        </p>
+        <div class="footer__socials">
+          <a href="#" class="footer__social" title="Telegram">✈</a>
+          <a href="#" class="footer__social" title="Instagram">📷</a>
+          <a href="#" class="footer__social" title="Facebook">👥</a>
+          <a href="#" class="footer__social" title="YouTube">▶</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">Каталог</div>
+        <ul class="footer__links">
+          <li><a href="#" class="footer__link">🎵 Концерти</a></li>
+          <li><a href="#" class="footer__link">🎭 Театр і вистави</a></li>
+          <li><a href="#" class="footer__link">⚽ Спорт</a></li>
+          <li><a href="#" class="footer__link">🎨 Виставки</a></li>
+          <li><a href="#" class="footer__link">👶 Дитячі заходи</a></li>
+          <li><a href="#" class="footer__link">🎤 Гумор і стендап</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer__col-title">Інформація</div>
+        <ul class="footer__links">
+          <li><a href="about.html" class="footer__link">Про нас</a></li>
+          <li><a href="faq.html" class="footer__link">Часті питання</a></li>
+          <li><a href="contacts.html" class="footer__link">Контакти</a></li>
+          <li><a href="#" class="footer__link">Умови використання</a></li>
+          <li><a href="#" class="footer__link">Політика конфіденційності</a></li>
+          <li><a href="#" class="footer__link">Повернення квитків</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer__col-title">Підтримка</div>
+        <ul class="footer__links">
+          <li><a href="tel:+380800123456" class="footer__link">📞 0 800 123 456</a></li>
+          <li><a href="mailto:support@ticketua.com" class="footer__link">✉ support@ticketua.com</a></li>
+          <li><a href="#" class="footer__link">💬 Онлайн-чат</a></li>
+          <li><a href="#" class="footer__link">🕐 Пн–Нд 9:00–21:00</a></li>
+        </ul>
+        <div style="margin-top:24px;">
+          <div class="footer__col-title">Завантажити застосунок</div>
+          <div style="display:flex; flex-direction:column; gap:10px; margin-top:12px;">
+            <a href="#" class="btn btn--ghost" style="justify-content:flex-start; gap:10px; padding:10px 14px;">
+              🍎 App Store
+            </a>
+            <a href="#" class="btn btn--ghost" style="justify-content:flex-start; gap:10px; padding:10px 14px;">
+              🤖 Google Play
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span class="footer__copy">© 2025 ТікетЮА. Усі права захищені.</span>
+      <div class="footer__payments">
+        <span class="pay-badge">VISA</span>
+        <span class="pay-badge">MC</span>
+        <span class="pay-badge">APPLE PAY</span>
+        <span class="pay-badge">G PAY</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
