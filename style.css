@@ -223,9 +223,8 @@ button, input, select, textarea { font-family: inherit; border: none; outline: n
 /* NAV */
 .nav { display: flex; align-items: center; gap: 4px; flex: 1; }
 .nav__link {
-  position: relative;
   padding: 8px 14px; font-size: 14px; font-weight: 500;
-  color: var(--text-muted);       /* явно */
+  color: var(--text-muted);
   border: 2px solid transparent;
   border-radius: 6px;
   white-space: nowrap;
@@ -233,21 +232,15 @@ button, input, select, textarea { font-family: inherit; border: none; outline: n
 }
 .nav__link:hover {
   color: var(--text-dark);
-  background: #f0ede6;
-  border-color: var(--text-dark);
+  background: var(--bg);
+  border-color: rgba(40,25,5,.25);
   transform: translateY(-2px);
 }
-.nav__link.active { color: var(--gold); border-color: var(--gold); background: var(--gold-pale); }
-
-/* підкреслення */
-.nav__link::after {
-  content: '';
-  position: absolute; bottom: 3px; left: 14px; right: 14px;
-  height: 2px; background: var(--gold); border-radius: 1px;
-  transform: scaleX(0); transform-origin: left;
-  transition: transform .36s var(--ease);
+.nav__link.active {
+  color: var(--gold);
+  border-color: var(--gold);
+  background: var(--gold-pale);
 }
-.nav__link:hover::after, .nav__link.active::after { transform: scaleX(1); }
 
 /* SEARCH */
 .header__search { flex: 1; max-width: 300px; position: relative; }
@@ -289,15 +282,20 @@ button, input, select, textarea { font-family: inherit; border: none; outline: n
   position: relative; overflow: hidden;
   transition: transform var(--t) var(--spring), box-shadow var(--t), background var(--t), color var(--t), border-color var(--t);
 }
+/* всі дочірні елементи (текст, іконки) — над shimmer шаром */
+.btn > * { position: relative; z-index: 1; }
 
-/* shimmer (зразок) */
+/* shimmer — рухається крізь кнопку при hover */
 .btn::before {
   content: '';
-  position: absolute; top: 0; left: -100%; bottom: 0; width: 100%;
-  background: rgba(255,255,255,.18);
-  transition: left .4s var(--ease);
+  position: absolute; top: 0; bottom: 0;
+  left: -80%; width: 60%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,.22), transparent);
+  transform: skewX(-12deg);
+  transition: left .5s var(--ease);
+  z-index: 0;
 }
-.btn:hover::before { left: 100%; }
+.btn:hover::before { left: 120%; }
 .btn:active { transform: translateY(1px) scale(.97) !important; }
 
 .btn--ghost {
@@ -674,27 +672,22 @@ button, input, select, textarea { font-family: inherit; border: none; outline: n
 }
 .event-card:hover .event-card__price-val { transform: translateX(8px) scale(1.08); }  /* зразок */
 
-/* button — fill left-to-right (зразок) */
+/* button — fill left-to-right via background-position */
 .event-card__btn {
   display: inline-block; padding: 12px 28px;
-  background: var(--text-dark);     /* зразок */
-  color: #ffffff;                   /* явно білий */
+  background: linear-gradient(to right, var(--gold) 50%, var(--text-dark) 50%);
+  background-size: 200% 100%;
+  background-position: right center;
+  color: #ffffff;
   border-radius: 6px; font-weight: bold;
-  position: relative; overflow: hidden;
-  transition: transform var(--t) var(--spring), box-shadow var(--t);
+  transition: background-position .4s var(--ease), transform var(--t) var(--spring), box-shadow var(--t);
 }
-.event-card__btn::before {
-  content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%;
-  background: var(--gold);
-  transition: left .4s var(--ease);
-  z-index: 0;
+.event-card__btn:hover {
+  background-position: left center;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(40,25,5,.2);
 }
-.event-card__btn:hover::before { left: 0; }
-.event-card__btn:hover { transform: translateY(-3px); box-shadow: 0 10px 25px rgba(40,25,5,.2); }
 .event-card__btn:active { transform: translateY(0) scale(.97); }
-/* текст над шаром */
-.event-card__btn > * { position: relative; z-index: 1; }
-.event-card__btn { isolation: isolate; }
 
 /* ============================================
    SALE BADGE (зразок)
