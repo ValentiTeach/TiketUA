@@ -4,12 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Про нас · ТікетЮА</title>
-  <meta name="description" content="ТікетЮА — офіційний онлайн-сервіс продажу квитків в Україні. Понад 1.2 мільйони задоволених клієнтів з 2018 року." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<!-- ===== HEADER ===== -->
+<!-- HEADER -->
 <header class="header">
   <div class="container">
     <div class="header__inner">
@@ -18,12 +17,12 @@
         Тікет<span>ЮА</span>
       </a>
       <nav class="nav">
-        <a href="index.html" class="nav__link">Головна</a>
+        <a href="index.html"        class="nav__link">Головна</a>
         <a href="index.html#events" class="nav__link">Концерти</a>
         <a href="index.html#events" class="nav__link">Театр</a>
         <a href="index.html#events" class="nav__link">Спорт</a>
         <a href="index.html#events" class="nav__link">Виставки</a>
-        <a href="about.html" class="nav__link active">Про нас</a>
+        <a href="about.html"        class="nav__link active">Про нас</a>
       </nav>
       <div class="header__search">
         <input type="text" placeholder="Пошук подій, артистів…" />
@@ -33,13 +32,13 @@
       </div>
       <div class="header__actions">
         <a href="contacts.html" class="btn btn--ghost">Підтримка</a>
-        <a href="#" class="btn btn--gold">Увійти</a>
+        <a href="#"             class="btn btn--gold">Увійти</a>
       </div>
     </div>
   </div>
 </header>
 
-<!-- ===== HERO ===== -->
+<!-- HERO -->
 <section class="about-hero">
   <div class="container">
     <p class="about-hero__eyebrow">Наша місія</p>
@@ -49,56 +48,42 @@
       найкращі культурні, спортивні та розважальні події країни.
     </p>
     <div class="stats-row">
-      <div class="stat-item">
-        <div class="stat-num">7+</div>
-        <div class="stat-label">Років на ринку</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-num">1.2М</div>
-        <div class="stat-label">Задоволених клієнтів</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-num">2500+</div>
-        <div class="stat-label">Подій щомісяця</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-num">180+</div>
-        <div class="stat-label">Міст України</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-num">500+</div>
-        <div class="stat-label">Партнерів-організаторів</div>
-      </div>
+      <div class="stat-item"><div class="stat-num">7+</div><div class="stat-label">Років на ринку</div></div>
+      <div class="stat-item"><div class="stat-num">1.2М</div><div class="stat-label">Задоволених клієнтів</div></div>
+      <div class="stat-item"><div class="stat-num">2500+</div><div class="stat-label">Подій щомісяця</div></div>
+      <div class="stat-item"><div class="stat-num">180+</div><div class="stat-label">Міст України</div></div>
+      <div class="stat-item"><div class="stat-num">500+</div><div class="stat-label">Організаторів</div></div>
     </div>
   </div>
 </section>
 
-<!-- ===== STORY ===== -->
-<div class="about-content-wrap">
+<!-- MAIN CONTENT -->
+<main class="about-wrap">
 
-  <div class="story-section">
-    <h2>Наша Історія</h2>
-    <p>
+  <!-- STORY -->
+  <div class="a-card">
+    <h2 class="a-card__title">Наша Історія</h2>
+    <p class="a-card__text">
       ТікетЮА — провідний онлайн-майданчик для продажу квитків на події в Україні.
       Ми співпрацюємо з найбільшими організаторами, театрами, спортивними клубами та
       концертними залами по всій країні.
     </p>
-    <p>
+    <p class="a-card__text">
       Наша платформа забезпечує швидку, зручну та безпечну покупку квитків:
       від вибору події до отримання електронного квитка на пошту — лише кілька хвилин.
     </p>
-    <p>
-      Команда ТікетЮА складається з 80+ фахівців у сфері технологій, маркетингу
-      та клієнтської підтримки. Ми щодня працюємо над тим, щоб ваш досвід покупки
+    <p class="a-card__text">
+      Команда ТікетЮА складається з 80+ фахівців у сфері технологій, маркетингу та
+      клієнтської підтримки. Ми щодня працюємо над тим, щоб ваш досвід покупки
       квитків був бездоганним.
     </p>
   </div>
 
-  <!-- ===== VIDEO ===== -->
-  <div class="media-section">
-    <div class="media-section__label">Відеопрезентація</div>
-    <h2 class="media-section__title">Як ми <span>працюємо</span></h2>
-    <p class="media-section__sub">Подивіться короткий ролик про нашу платформу та команду</p>
+  <!-- VIDEO -->
+  <div class="a-card">
+    <p class="a-card__eyebrow">Відеопрезентація</p>
+    <h2 class="a-card__title">Як ми <span class="gold">працюємо</span></h2>
+    <p class="a-card__sub">Подивіться короткий ролик про нашу платформу та команду</p>
     <div class="video-wrapper">
       <iframe
         src="https://www.youtube.com/embed/dQw4w9WgXcQ"
@@ -110,106 +95,114 @@
     </div>
   </div>
 
-  <!-- ===== VALUES ===== -->
-  <h2 style="text-align:center; font-size:42px; font-family:'Bebas Neue',sans-serif; letter-spacing:.02em; color:#1a1714; margin: 56px 0 40px;">
-    Наші <span style="color:#c8820a;">Цінності</span>
-  </h2>
-  <div class="values-grid">
-    <div class="value-card">
-      <div class="value-icon">🔒</div>
-      <h3>Безпека</h3>
-      <p>SSL-шифрування, захищена оплата та офіційні квитки — ваші дані завжди в безпеці.</p>
-    </div>
-    <div class="value-card">
-      <div class="value-icon">⚡</div>
-      <h3>Швидкість</h3>
-      <p>Купівля квитка — менше 2 хвилин. Миттєва доставка PDF з QR-кодом на пошту.</p>
-    </div>
-    <div class="value-card">
-      <div class="value-icon">🇺🇦</div>
-      <h3>Культура</h3>
-      <p>Підтримуємо українських артистів, театри та спортивні клуби по всій країні.</p>
-    </div>
-    <div class="value-card">
-      <div class="value-icon">🤝</div>
-      <h3>Партнерство</h3>
-      <p>500+ організаторів довіряють нам. Зручні інструменти управління та аналітика.</p>
-    </div>
-    <div class="value-card">
-      <div class="value-icon">💬</div>
-      <h3>Підтримка</h3>
-      <p>Команда підтримки 7 днів на тиждень: телефон, email, онлайн-чат.</p>
-    </div>
-    <div class="value-card">
-      <div class="value-icon">♻</div>
-      <h3>Екологічність</h3>
-      <p>Електронні квитки замість паперових — зручно та відповідально.</p>
-    </div>
-  </div>
-
-  <!-- ===== TIMELINE ===== -->
-  <div class="timeline">
-    <h2>Наш Шлях</h2>
-    <div class="timeline-item">
-      <div class="timeline-year">2018</div>
-      <div class="timeline-content">
-        <h3>Заснування</h3>
-        <p>Запуск платформи ТікетЮА. Перші 50 подій та 10 000 проданих квитків за перший місяць роботи.</p>
+  <!-- VALUES -->
+  <div>
+    <h2 class="a-section-title">Наші <span class="gold">Цінності</span></h2>
+    <div class="a-values">
+      <div class="a-value">
+        <div class="a-value__icon">🔒</div>
+        <h3 class="a-value__title">Безпека</h3>
+        <p class="a-value__text">SSL-шифрування, захищена оплата та офіційні квитки — ваші дані завжди в безпеці.</p>
       </div>
-    </div>
-    <div class="timeline-item">
-      <div class="timeline-year">2019</div>
-      <div class="timeline-content">
-        <h3>Розширення</h3>
-        <p>Вихід на 20 нових міст України. Запуск мобільного застосунку та електронних квитків з QR-кодом.</p>
+      <div class="a-value">
+        <div class="a-value__icon">⚡</div>
+        <h3 class="a-value__title">Швидкість</h3>
+        <p class="a-value__text">Купівля квитка — менше 2 хвилин. Миттєва доставка PDF з QR-кодом на пошту.</p>
       </div>
-    </div>
-    <div class="timeline-item">
-      <div class="timeline-year">2021</div>
-      <div class="timeline-content">
-        <h3>100 000 клієнтів</h3>
-        <p>Переломний момент — 100 000 зареєстрованих користувачів та 500+ організаторів-партнерів на платформі.</p>
+      <div class="a-value">
+        <div class="a-value__icon">🇺🇦</div>
+        <h3 class="a-value__title">Культура</h3>
+        <p class="a-value__text">Підтримуємо українських артистів, театри та спортивні клуби по всій країні.</p>
       </div>
-    </div>
-    <div class="timeline-item">
-      <div class="timeline-year">2023</div>
-      <div class="timeline-content">
-        <h3>1 млн транзакцій</h3>
-        <p>Перевищено позначку 1 мільйон успішних продажів. Запуск Apple Pay та Google Pay для миттєвої оплати.</p>
+      <div class="a-value">
+        <div class="a-value__icon">🤝</div>
+        <h3 class="a-value__title">Партнерство</h3>
+        <p class="a-value__text">500+ організаторів довіряють нам. Зручні інструменти управління та аналітика.</p>
       </div>
-    </div>
-    <div class="timeline-item">
-      <div class="timeline-year">2025</div>
-      <div class="timeline-content">
-        <h3>Сьогодення</h3>
-        <p>1.2 млн задоволених клієнтів, 180+ міст, 2500+ подій щомісяця. ТікетЮА — №1 продаж квитків в Україні.</p>
+      <div class="a-value">
+        <div class="a-value__icon">💬</div>
+        <h3 class="a-value__title">Підтримка</h3>
+        <p class="a-value__text">Команда підтримки 7 днів на тиждень: телефон, email, онлайн-чат.</p>
+      </div>
+      <div class="a-value">
+        <div class="a-value__icon">♻</div>
+        <h3 class="a-value__title">Екологічність</h3>
+        <p class="a-value__text">Електронні квитки замість паперових — зручно та відповідально.</p>
       </div>
     </div>
   </div>
 
-  <!-- ===== TEAM ===== -->
-  <div class="team-section">
-    <h2>Наша Команда</h2>
-    <p>
+  <!-- TIMELINE -->
+  <div class="a-card">
+    <h2 class="a-card__title a-card__title--center">Наш Шлях</h2>
+    <div class="a-timeline">
+
+      <div class="a-tl-item">
+        <div class="a-tl-year">2018</div>
+        <div class="a-tl-body">
+          <h3 class="a-tl-heading">Заснування</h3>
+          <p class="a-tl-text">Запуск платформи ТікетЮА. Перші 50 подій та 10 000 проданих квитків за перший місяць роботи.</p>
+        </div>
+      </div>
+
+      <div class="a-tl-item">
+        <div class="a-tl-year">2019</div>
+        <div class="a-tl-body">
+          <h3 class="a-tl-heading">Розширення</h3>
+          <p class="a-tl-text">Вихід на 20 нових міст України. Запуск мобільного застосунку та електронних квитків з QR-кодом.</p>
+        </div>
+      </div>
+
+      <div class="a-tl-item">
+        <div class="a-tl-year">2021</div>
+        <div class="a-tl-body">
+          <h3 class="a-tl-heading">100 000 клієнтів</h3>
+          <p class="a-tl-text">Переломний момент — 100 000 зареєстрованих користувачів та 500+ організаторів-партнерів на платформі.</p>
+        </div>
+      </div>
+
+      <div class="a-tl-item">
+        <div class="a-tl-year">2023</div>
+        <div class="a-tl-body">
+          <h3 class="a-tl-heading">1 млн транзакцій</h3>
+          <p class="a-tl-text">Перевищено позначку 1 мільйон успішних продажів. Запуск Apple Pay та Google Pay для миттєвої оплати.</p>
+        </div>
+      </div>
+
+      <div class="a-tl-item">
+        <div class="a-tl-year">2025</div>
+        <div class="a-tl-body">
+          <h3 class="a-tl-heading">Сьогодення</h3>
+          <p class="a-tl-text">1.2 млн задоволених клієнтів, 180+ міст, 2500+ подій щомісяця. ТікетЮА — №1 продаж квитків в Україні.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- TEAM -->
+  <div class="a-card a-card--center">
+    <h2 class="a-card__title">Наша Команда</h2>
+    <p class="a-card__text a-card__text--wide">
       Ми — 80+ професіоналів, об'єднаних спільною пристрастю до культури та технологій.
       Розробники, маркетологи, дизайнери та спеціалісти підтримки щодня працюють над тим,
       щоб кожна покупка квитка була швидкою та приємною.
     </p>
-    <div class="team-icons">
+    <div class="a-team-icons">
       <span>💻</span><span>🎨</span><span>📊</span><span>🎧</span><span>📱</span>
     </div>
   </div>
 
-  <!-- ===== CTA ===== -->
-  <div class="cta-section">
-    <h2>Приєднуйтесь до нашої спільноти</h2>
-    <p>Відкрийте для себе найкращі події України. Реєстрація — безкоштовно.</p>
-    <a href="index.html#events" class="cta-button">Переглянути події</a>
+  <!-- CTA -->
+  <div class="a-cta">
+    <h2 class="a-cta__title">Приєднуйтесь до нашої спільноти</h2>
+    <p class="a-cta__sub">Відкрийте для себе найкращі події України. Реєстрація — безкоштовно.</p>
+    <a href="index.html#events" class="a-cta__btn">Переглянути події</a>
   </div>
 
-</div><!-- /about-content-wrap -->
+</main>
 
-<!-- ===== FOOTER ===== -->
+<!-- FOOTER -->
 <footer class="footer">
   <div class="container">
     <div class="footer__grid">
@@ -237,16 +230,15 @@
       <div>
         <div class="footer__col-title">Компанія</div>
         <ul class="footer__links">
-          <li><a href="about.html" class="footer__link">Про нас</a></li>
-          <li><a href="faq.html" class="footer__link">FAQ</a></li>
+          <li><a href="about.html"    class="footer__link">Про нас</a></li>
+          <li><a href="faq.html"      class="footer__link">FAQ</a></li>
           <li><a href="contacts.html" class="footer__link">Контакти</a></li>
-          <li><a href="#" class="footer__link">Умови використання</a></li>
         </ul>
       </div>
       <div>
         <div class="footer__col-title">Підтримка</div>
         <ul class="footer__links">
-          <li><a href="tel:+380800123456" class="footer__link">📞 0 800 123 456</a></li>
+          <li><a href="tel:+380800123456"          class="footer__link">📞 0 800 123 456</a></li>
           <li><a href="mailto:support@ticketua.com" class="footer__link">✉ support@ticketua.com</a></li>
         </ul>
       </div>
